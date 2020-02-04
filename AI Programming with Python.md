@@ -1,0 +1,2 @@
+- An iterator is an object that represents a stream of data. This is different from a list, which is also an iterable, but not an iterator because it is not a stream of data.
+- Generators are a simple way to create iterators using functions. You can also define iterators using classes, which you can read more about here.

@@ -1,0 +1,17 @@
+- install yarn with yarn init
+- add babel-preset-es2019 babel-register babel-polyfill with yarn add
+- yarn add express
+- create index.js
+- add requires for babel-register, babel-polyfill and./server
+- create server folder and create another index.js inside of that 
+- import express to the server
+- create a const app = express()
+- create a const PORT = process.env.PORT || 3000
+- listen to the port with app.listen and if an error pops up use console.error
+- What are .fdsfds**rc** files?
+- you will get an error when you use node index.js unless you create a .babelrc file and put { presets:"es2015" in it
+- Create a config folder and the create a db.js file for your database 
+- import mongoose
+- export default, make some promise, etc. etc. DON'T UNDERSTAND
+- UP TO 8.33 ish problem with MongoDB on running index.js
+- MongoError: failed to connect to server [localhost:27017] on first connect
