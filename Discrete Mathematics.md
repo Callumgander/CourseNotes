@@ -72,4 +72,44 @@ Tautologies and contradictions
 
 - A tautology t is a statement that is always true
 - A contradiction c is a statement that is always false
+
+DeMorgan's Laws
+
+- ~(p ∨ q) $\equiv$ (~p) $\land$ (~q)
+- p: trefor is a unicorn
+- q: trefor is a goldfish
+- left side: it's NOT the case that Trefor is either a unicorn OR a goldfish
+- right side: Trefor is NOT a unicorn AND NOT a goldfish
+- Double negative: ~(~p) $\equiv$ p
+- (~(p $\lor$ ~q)) $\land$ t 
+- (~p $\land$ ~(~q)) $\land$ t (via DeMorgan's)
+- (~p $\land$ q) $\land$ t (via double negative)
+- ~p $\land$ q (via identity)
+
+Conditional Statements 
+
+- def: p -> q means: "if p is TRUE then q is TRUE"
+- **If** I study hard, **then** I will pass
+- if p then q
+- p -> q
+- **Either** I don't study hard, **or** I pass
+- ~p $\lor$ q
+
+Vacuous truth
+
+- When the hypothesis is false, the statement is vacuously true
+- ex: **if** Trefor is a unicorn, **then** everyone get's an A
+- ex: **Either** trefor is **not** a unicorn, **or** everyone get's an A
+
+Negating a conditional
+
+- ~(p -> q) $\equiv$ ~(~p $\lor$ q)
+- ~~p $\land$ ~q) DeMorgan's law 
+- p $\land$ ~q
+
+Contrapositive of a conditional
+
+- p -> q $\equiv$ ~q -> ~p
+- **If** I study hard, **then** I will pass
+- contrapositive: **If** I don't pass, **then** I didn't study hard
 - 

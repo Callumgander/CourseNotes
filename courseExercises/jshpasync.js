@@ -1,3 +1,5 @@
+https://jsbin.com/hebejagugo/
+
 /////////////////
 //             //
 // CHALLENGE 1 //
@@ -86,22 +88,21 @@ console.log('End of Challenge 3');
 // /* <<<=== Remove the first two slashes (//) to comment out this challenge when finished
 console.log('Start of Challenge 4');
 // ...your code below
-
 function forEach(arr, cb){
   for (let i = 0; i < arr.length; i++){
-    return cb(arr[i]);
+    console.log(cb(arr[i], i));
   }
 }
 
 var delays = [2000, 5000, 0, 3500];
 
 function delayLog(delayTime, i){
-  setTimeout(function(){console.log(`printing element ${i}`);}, delayTime);
+  setTimeout(function(){
+    console.log(`printing element ${i}`);
+  }, delayTime);
 }
 
 forEach(delays, delayLog);
-
-console.log('End of Challenge 4');
 // */// (do not alter this line)
 
 
@@ -116,8 +117,25 @@ console.log('End of Challenge 4');
 console.log('Start of Challenge 5');
 // ...your code below
 
+function changeColor() {
+  var getBody = document.getElementsByTagName("body")[0]
+  var prop = window.getComputedStyle(getBody).getPropertyValue("background-color");
 
+  if (prop === "rgb(221, 238, 255)") {
+      document.body.style.background = "rgb(255,238,221)";
+  } else {
+      document.body.style.background = "rgb(221,238,255)";
+  }
+}
 
+document.getElementById("activate").addEventListener("click", function(){
+console.log("clicked #1")
+});
+
+document.getElementById("color").addEventListener("click", function(){
+console.log("clicked #2")
+changeColor();
+});
 
 // ...your code above
 document.body.style.background = '#def';
@@ -138,10 +156,15 @@ var dataReceived;
 
 function ajaxSimulate(id, callback) {
   var database = ['Aaron', 'Barbara', 'Chris'];
-
+  setTimeout(callback(database[id]), 0)
 }
 // ...your code below
+function storeData(data){
+   dataReceived = data;
+}
 
+ajaxSimulate(1, storeData);
+console.log(dataReceived);
 
 
 console.log('End of Challenge 6');
@@ -158,6 +181,27 @@ console.log('End of Challenge 6');
 // /* <<<=== Remove the first two slashes (//) to comment out this challenge when finished
 console.log('Start of Challenge 7');
 // ...your code below
+
+
+        
+function imgGet(theUrl)
+{
+    var xmlHttp = new XMLHttpRequest();
+    xmlHttp.open( "GET", theUrl, false ); // false for synchronous request
+    xmlHttp.send( null );
+    var result = xmlHttp.responseText;
+    result = JSON.parse(result)
+    return result.image_url
+}
+
+var imgUrl = imgGet("https://rest.bandsintown.com/artists/alexisonfire?app_id=jshp");
+console.log(imgUrl)
+
+var elem = document.createElement("img");
+elem.setAttribute("src", imgUrl);
+// console.log(elem)
+document.getElementById("ch2").appendChild(elem);
+
 
 
 
@@ -180,6 +224,27 @@ console.log('Start of Challenge 8');
 
 
 
+function jsonGet(theUrl)
+{
+    var xmlHttp = new XMLHttpRequest();
+    xmlHttp.open( "GET", theUrl, false ); // false for synchronous request
+    xmlHttp.send( null );
+    var result = xmlHttp.responseText;
+    result = JSON.parse(result)
+    return result
+}
+
+var json = jsonGet("https://rest.bandsintown.com/artists/alexisonfire/events?app_id=jshp&date=all");
+console.log(json[0].venue.name)
+
+for (let i = 0; i < json.length; i++){
+  var elem = document.createElement("li");
+  elem.textContent = json[i].venue.name;
+  // console.log(elem)
+  document.getElementById("ch3").appendChild(elem);
+}
+
+
 
 
 
@@ -198,6 +263,27 @@ console.log('End of Challenge 8');
 console.log('Start of Challenge 9');
 // ...your code below
 
+function jsonGet(theUrl)
+{
+    var xmlHttp = new XMLHttpRequest();
+    xmlHttp.open( "GET", theUrl, false ); // false for synchronous request
+    xmlHttp.send( null );
+    var result = xmlHttp.responseText;
+    result = JSON.parse(result)
+    return result
+}
+
+var json = jsonGet("https://rest.bandsintown.com/artists/alexisonfire/events?app_id=jshp&date=all");
+// console.log(json[0].venue.country)
+
+for (let i = 0; i < json.length; i++){
+  if (json[i].venue.country === "United States"){
+    var elem = document.createElement("li");
+    elem.textContent = json[i].venue.name;
+    // console.log(elem)
+    document.getElementById("ch4").appendChild(elem);
+  }
+}
 
 
 

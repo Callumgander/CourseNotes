@@ -31,6 +31,7 @@ Tools
 - How many components per file? 1 component per file
 
 JSX
+
 - What is JSX? It allows you to just write HTML rather than convert html into React
 - How do you install all the commands so that ESLint understands react correctly? npm install -D babel-eslint eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react
 - What is babel? Babel is a transplier 
@@ -38,4 +39,14 @@ JSX
 - What are plugins in eslint? new abilities for eslint
 - What are rules in eslint? the area where you can turn on and off specific rules 
 
-UP TO HOOKS
+Hooks
+
+- What do hooks do? they allow you to use functions statefully, so if you have a function on a input box, you might assign the initial value of that box to "hello" but then the hook will essentially update tha
+- Where do hooks never ever go? inside if statements or for loops
+- How do you configure ESLint for Hooks? "npm i -D eslint-plugin-react-hooks" then "add "react-hooks/rules-of-hooks": 2" and ""react-hooks/exhaustive-deps": 1" to rules and "react-hooks" to plugins. The rules are written by the actual react team
+- If you type in "import { ANIMALS } from "@frontendmasters/pet";" at the top of your file but you don't have this dependency, what will parcel do? parcel will automatically install it, link dependencies and rebuild your package
+- How does React work in terms of rerendering? Everytime something changes, it runs render function again
+- Say you just need to sort a list and you don't want to rerender everything, what does React have to deal with this? you add a key to the element and essentially react will see that it is part of a unique list and rather than rerendering everything, it will just move the elements within that list. These keys need to be unique per user, so in a bigger application maybe by email or id, etc.
+- 
+
+UP TO EFFECTS
