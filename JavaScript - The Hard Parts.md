@@ -139,4 +139,79 @@ Browser API
 
 - What is an API? a bunch of functionality or data we can interact with
 - What is the web browser in relation to JS? It's a javascript runtime with a bunch of other tools, like setTimeout
-- 
+
+Callback Queue
+
+- functions coming from the web browser api will not be called until the global callstack is completely clear
+- What are the two rules for the execution of asynchronously delayed code? hold each deferred function in a queue (the Callback Queue) when the API 'completes'
+- Add the function to the Call stack (i.e. execute the function) ONLY when the call stack is totally empty (have the Event Loop check this condition)
+- What is the Event Loop? The process of checking whether the call stack is empty and whether the callstack queue has a function in it 
+- What are somethings where waiting would block our threat and we use Browser APIs for instead? a timer to finish running, new information from a server (Ajax), indication that a portion of the page has loaded, user interaction (clicks, mouseovers, drags), writing/reading to file system (Node), writing/reading database (Node)
+
+    function display(data){
+        console.log(data.post);
+    }
+
+    $.get("http://twitter.com/willsen/tweet/1", display);
+
+    console.log("Me first!);
+
+- xmlHttpRequest
+- Asynchronous callbacks, Web APIs, the Callback Queue and Event loop allow us to defer our actions until the 'work' (an API request, timer, etc.) is completed and continue running our code line by line in the meantime
+- Asynchronous JS is the backbone of the modern web - letting us build fast 'non-blocking' applications
+
+Object-Oriented JavaScript
+
+- Why is OOP a popular paradigm for structuring complex code? easy to add features and functionality, performant (efficient in terms of memory), easy for us and other developers to reason about (a clear structure)
+- objects store functions with their assoicated data
+- What is encapsulation? binding together the data and functions that manipulate the data 
+
+    let user1 = {
+        name: "Will",
+        score: 3,
+        increment: function() {
+            user1.score++;
+        }
+    };
+    
+    user1.increment();
+
+- What alternative techniques do we have for creating objects?
+- using dot notation, i.e. 
+
+    let user2 = {};
+    user2.name = "Tim";
+
+- using Object.create
+
+    let user3 = Object.create(null);
+
+    user3.name = "Eva";
+    user3.score = 9;
+    user3.increment = function() {
+        user3.score++;
+    }
+
+- Generate objects using function
+  
+  function userCreator(name, score) {
+      let newUser = {};
+      newUser.name = name;
+      newUser.score = score;
+      newUser.increment = function() {
+          newUser.score++;
+      }
+      return newUser
+  };
+
+  // later
+
+  let user1 = userCreator("Will", 3);
+  let user2 = userCreator("Tim", 5);
+  user1.increment();
+  user2.increment();
+
+- what is the problem with the above code? Each time we create a new user, we make space in our computer's memory for all our data and functions. But our functions are just copies, meaning that rather than just attaching it to 1 separate function and recalling for each one, we are creating new functions for each user, wasting huge sums on memory at larger scales
+
+
+up to __proto__

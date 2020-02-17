@@ -112,4 +112,96 @@ Contrapositive of a conditional
 - p -> q $\equiv$ ~q -> ~p
 - **If** I study hard, **then** I will pass
 - contrapositive: **If** I don't pass, **then** I didn't study hard
+
+Converse and inverse of a conditional statement
+
+- The Converse of a statement p -> q is the statement q -> p
+- These are not logically equivalent
+- **if** it's a dog, **then** it's a mammal
+- **if** it's a mammal, **then** it's a dog
+- The Inverse of a statement  p -> q is the statement ~p -> ~q
+- $\equiv$ ~q -> ~p, which is the converse of the contrapositive
+- so inverse $\equiv$ converse
+- **if** it's a dog, **then** it's a mammal  p -> q 
+- **if** it's not a dog, **then** it's not a mammal   ~p -> ~q
+- also not logically equivalent to the original statement
+  
+Biconditional Statements "if and only if"
+
+- The biconditional p <-> q means that both p -> q and q -> p
+- **If** I study hard, **then** I will pass p -> q
+- **If** I pass, **then** I studied hard q -> p
+- I will pass **if and only if** I study hard p <-> q
+
+Logical Arguments - Modus Ponens & Modus Tollens
+
+- A valid argument is a list of premises from which the conclusion follows
+- **If** I do the dishes, **then** my wife will be happy with me - premise
+- I do the dishes - premise
+- **Therefore**, my wife is happy with me - conclusion
+- Modus Ponens is an argument of the form:
+  - **if** p, **then** q. (Psubscript1)
+  - p. (Psubscript2)
+  - **Therefore** q. (C)
+- Modus Tollens is an argument of the form:
+  - **if** p, **then** q
+  - ~q
+  - **Therefore**, ~p 
+- Knowing your conclusion is false, forces your assumptions to be false to
+- **If** I'm the POTUS **then** I'm an American citizen
+- I'm not an American citizen
+- **Therefore**, I'm not the POTUS
 - 
+
+Logical Argument Forms: Generalizations, Specialization, Contradiction
+
+- Generalization is an argument of the form:
+  - p.
+  - **Therefore**, p $\lor$ q
+  - ex:
+  - I'm a Canadian
+  - **Therefore**, I'm a Canadian or I'm a unicorn
+- Specialization is an argument of the form:
+  - p $\land q$.
+  - **Therefore**, p.
+  - ex:
+  - I'm a Canadian and I have a PhD
+  - **Therefore**, I'm a Canadian
+- Contradiction is an argument of the form:
+  - ~p -> c
+  - Therefore, p.
+
+Analyzing an argument for validity
+- **If** I'm skilled at poker, **then** I will win (p -> q)
+- I won money playing poker (q)
+- **Therefore**, I'm skilled at poker (p)
+- So the argument is trying to use the converse of the statement, q -> p, and as they aren't logically equivalent, this argument is invalid
+
+Predicates and their Truth Sets
+- A statement is either TRUE or FALSE
+- x > 5 is undetermined, so not a logical statement
+- What is a predicate? a predicate is a sentence depending on variables which becomes a statement upon substituting values in the domain
+- ex: P(x): x is a factor of 12 with domain $\mathbb{Z}^+$ (all positive integers)
+- P(6) is True
+- P(5) is False
+- P($\frac{1}{3}$) is nonsense because $\frac{1}{3}$ $\not \in$ $\mathbb{Z}^+$
+- What is the Truth Set of a predicate? all values x in the domain where P(x) is true 
+- The Truth Set of a predicate P(x): {x $\in$ D | P(x)}
+- All values x in the domain where P(x) is true
+
+Universal and Existential Quantifiers
+- What does $\forall$ mean? $\forall$ represents the universal quantifier that means "for all"
+- What is the main use of the universal quantifier? "quantifying" predicates: $\forall$ x $\in$ D, P(x) (for all x in the domain, P(x) is true)
+- What does $\forall$ x $\in$ D, P(x) mean? For all x in the domain, P(x) is true
+- ex: every dog is a mammal
+- D = the set of dogs, P(x): x is a mammal
+- What does $\exists$ mean? $\exists$ is the existential quantifier that means "there exists"
+- What is the main use of the existential quantifier $\exists$? "quantifying" predicates: $\exists$x $\in$ D, P(x) (there exists x in the domain, such that P(x) is true)
+- What does $\exists$x $\in$ D, P(x) mean? there exists x in the domain, such that P(x) is true
+- ex: some person is the oldest in the world
+- some = $\exists$, x $\in$ D = {people in the world}, oldest = P(x)
+- Statement: P: "Roofus is a mammal"
+- Predicate: P(x): "x is a mammal"
+-  Statement: Q: $\forall x \in D, P(x)$ 
+
+Up to universal and existential quantifiers

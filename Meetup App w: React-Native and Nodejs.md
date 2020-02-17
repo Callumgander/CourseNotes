@@ -6,7 +6,7 @@
 - create server folder and create another index.js inside of that 
 - import express to the server
 - create a const app = express()
-- create a const PORT = process.env.PORT || 3000
+- create a const PORT =  process.env.PORT || 3000
 - listen to the port with app.listen and if an error pops up use console.error
 - What are .fdsfds**rc** files?
 - you will get an error when you use node index.js unless you create a .babelrc file and put { presets:"es2015" in it
@@ -42,3 +42,17 @@
 - essentially, make sure  you use native es6 promises, not mongoose.promise because it's deprecated. make sure in postman you use http not https as the latter won't work when making requests to localhost
 - create a postman POST request that essential practices sending a POST request to your db
 - create a get route 
+- create a postman GET request that gets all entries in your db
+
+BACKEND DONE (for now)
+
+- install expo (process different to video as has been totally overhauled)
+- expo may be one of the coolest bits of software I've ever seen
+- start a new project with blank project with expo and create it inside the meetupME folder
+- create an api.js file
+- "yarn start" to run backend server
+- getting "possible unhandled promise rejection (id: 0): TypeError: undefined is not an object (evaluating 'data.meetups'), for whatever reason the frontend react native code isn't processing the GET request properly because the server shows that the request is being sent and in postman requests work fine, definitely something to do with componentDidMount function
+- https://stackoverflow.com/questions/55140139/react-native-async-array-map-undefined-is-not-an-object useful
+- https://stackoverflow.com/questions/51534747/typeerror-this-state-patients-map-is-not-a-function
+- Got another error related to state.____.map not being a function, I was twicking bits of code, constantly reloading and suddenly reset after an experiment and it was working fine. I have no idea why but I guess I understand the process of state in React a bit better now
+- cmd + D in ios and click debugger to open react-native debugger
