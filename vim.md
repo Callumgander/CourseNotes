@@ -1,0 +1,5 @@
+- d = delete 
+- w = word
+- d + w = delete word
+- . = just repeat whatever you last did
+- so d + w then . will just delete a word 

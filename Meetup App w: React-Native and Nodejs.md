@@ -56,3 +56,19 @@ BACKEND DONE (for now)
 - https://stackoverflow.com/questions/51534747/typeerror-this-state-patients-map-is-not-a-function
 - Got another error related to state.____.map not being a function, I was twicking bits of code, constantly reloading and suddenly reset after an experiment and it was working fine. I have no idea why but I guess I understand the process of state in React a bit better now
 - cmd + D in ios and click debugger to open react-native debugger
+- npm start to start expo
+
+part 2
+- work on group model
+- install equimper's eslint rules
+- make a .eslintrc and extend the rules
+- make a .editorconfig file 
+- add eventDate to schema
+- create a groups module and then add a controller, index, model and routes.js file to the module
+- write the schema for the groups model
+- write the controller for the groups model using an async request and resolve thingie
+- if the request's name has not name or is not a string, return errors
+- shift + cmd + d to copy line in vscode
+- to select multiple instances of the same keyword press cmd + d and then repeated click d to select the next option as well and then you can type and delete or replace them
+
+up to 19:31

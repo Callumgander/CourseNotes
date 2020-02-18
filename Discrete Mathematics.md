@@ -204,4 +204,13 @@ Universal and Existential Quantifiers
 - Predicate: P(x): "x is a mammal"
 -  Statement: Q: $\forall x \in D, P(x)$ 
 
-Up to universal and existential quantifiers
+Universal Conditionals P(x) implies Q(x)
+
+- Universal-Conditionals: P(x) => Q(x) means $\forall x \in$ D, P(x) -> Q(x)
+- If **x is the POTUS**, then **x is a US citizen**
+- if P(x), then Q(x)
+- "Every POTUS is a US citizen" 
+
+Negating Universal and Existential Quantifiers 
+- Negate "$\forall x \in \mathbb{Z}^+$, x > 3"
+- 

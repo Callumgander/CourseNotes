@@ -212,6 +212,23 @@ Object-Oriented JavaScript
   user2.increment();
 
 - what is the problem with the above code? Each time we create a new user, we make space in our computer's memory for all our data and functions. But our functions are just copies, meaning that rather than just attaching it to 1 separate function and recalling for each one, we are creating new functions for each user, wasting huge sums on memory at larger scales
+-  solution 2: store the increment function in just one object and have the interpreter, if it doesn't find the function on user1, look up to that object to check if it's there? How to make this link?
 
+    function userCreator(name, score){
+        let newUser = Object.create(userFunctionStore);
+        newUser.name = name;
+        newUser.score = score;
+        return newUser;
+    };
 
-up to __proto__
+    let userFunctionStore = {
+        increment: function(){this.score++;},
+        login: function(){console.log("You're logged in");}
+    };
+
+    let user1 = userCreator("Will", 3);
+    let user2 = userCreator("Tim", 5);
+    user1.increment();
+
+- separate the object functionality from the object creator. The object creator creates the object functionality as a separate object then assigns it to a variables which it then adds properties to and returns
+- 
