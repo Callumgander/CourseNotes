@@ -231,4 +231,55 @@ Object-Oriented JavaScript
     user1.increment();
 
 - separate the object functionality from the object creator. The object creator creates the object functionality as a separate object then assigns it to a variables which it then adds properties to and returns
+- what does the line let newUser = Object.create(userFunctionStore); do? create a newUser variable and assign to it and empty object with the prototype of it being userFunctionStore
+- the below is sophiscated but not standard
+
+    let newUser = Object.create(functionStore)
+    ...
+    return newUser 
+
+- introduce the magic keyword new
+
+    let user1 = new userCreator("Will",3);
+
+- What happens when we invoke userCreator("Will", 3) without the new keyword?
+- When we call the constructor function with new in front we automate 2 things
+  1. Create a new user object
+  2. return the new user object
+
+- This is how the function quite a bit above looks with the new keyword
+
+    function User(name, score){
+        this.name = name;
+        this.score = score;
+    }
+
+    User.prototype.increment = function(){
+        this.score++;
+    }
+    
+    let user1 = new User("Will", 3);
+
+- so essentially, rather than storing the functionality in a separate function/object then creating a new copy of that functionality object inside another create function/object and then adding the properties to it, you instead just store it in the userCreator.prototype property 
+- We're writing our shared methods separatetly from our object 'constructor' itself (off in the User.prototype object)
+- Other languages let us do this all in one place. ES2015 lets us do so too
+- The class 'syntactic sugar'
+  
+  class user {
+      constructor (name, score){
+          this.name = name;
+          this.score = score;
+      }
+      increment() {
+          this.score++;
+      }
+  }
+
+  let user1 = new User("Eva", 9)
+  user1.increment();
+
+- What are the benefits? this is emerging as a new standard, feels more like style of other languages (e.g. Python)
+- Lecturer advises that if you are aspiring to get mid -> senior roles, do not build generic full-stack applications with no users, build developer empowering tools and libraries
+  
+JUST NEED TO DO ADDITIONALLY SECTIONS FROM v2 (promises, etc.)
 - 
