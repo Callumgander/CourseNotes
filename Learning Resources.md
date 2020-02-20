@@ -12,8 +12,10 @@
 - Kevin Naughton (really really good) - https://www.youtube.com/watch?v=o8S2bO3pmO4&list=PLi9RQVmJD2fYXgBAUfaN5MXgYPUTbzqeb
 - Errichto - https://www.youtube.com/channel/UCBr_Fu6q9iHYQCh13jmpbrg
 - mycodeschool (c and c++, other stuff too) - https://www.youtube.com/user/mycodeschool
-- Big old bunch of Problems and Solutions - https://www.youtube.com/channel/UCMNkvKnD3mo3Jj9eTwJllWw
-- 
+- Big old bunch of Problems and Solutions (low-ish quality) - https://www.youtube.com/channel/UCMNkvKnD3mo3Jj9eTwJllWw
+- Nick White (bunch o problems n solutions) - https://www.youtube.com/channel/UC1fLEeYICmo3O9cUsqIi7HA
+- Back to Back SWE (bunch o problems n solutions) - https://www.youtube.com/channel/UCmJz2DV1a3yfgrR7GqRtUUA/playlists
+- Competitive Programing, problems and systems design - (https://www.youtube.com/channel/UC1kBxkk2bcG78YBX7LMl9pQ)
 
 
 ### Deep Dives and Applications in Practice
@@ -31,6 +33,7 @@
 - goto (again assorted) - https://www.youtube.com/user/GotoConferences
 - Blackhat (Cybersecurity) - https://www.youtube.com/user/BlackHatOfficialYT/videos
 - idk (cybersecurity) - https://www.youtube.com/user/sambowne/videos
+- systems, hardware, security, networking, etc. - https://www.youtube.com/user/professormesser
 
 ### Projects and Tutorials
 
@@ -53,7 +56,7 @@
 - Vim - https://www.reddit.com/r/WatchPeopleVim/
 - Vim and Tmux - https://www.youtube.com/watch?v=5r6yzFEXajQ
 - Computer Science (General high-level cs) - https://www.youtube.com/channel/UCSX3MR0gnKDxyXAyljWzm0Q/featured
-- 
+- Fun, dumb tutorials in python and js - https://www.youtube.com/channel/UCRLEADhMcb8WUdnQ5_Alk7g
 
 ### Maths
 

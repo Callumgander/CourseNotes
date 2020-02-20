@@ -124,4 +124,7 @@ Divide and conquer
         return merge(Lsorted, Rsorted)
     
 - What is the big O of mergesort? O(n log n)
--
+
+Greedy Algorithms
+- Greed algorithms always make the locally optimal choice
+- 

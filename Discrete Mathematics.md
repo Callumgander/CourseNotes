@@ -213,4 +213,51 @@ Universal Conditionals P(x) implies Q(x)
 
 Negating Universal and Existential Quantifiers 
 - Negate "$\forall x \in \mathbb{Z}^+$, x > 3"
-- 
+- $\exists x \in \mathbb{Z}^+ , x \notin 3$
+- => $\exists x \in \mathbb{Z}^+ , x \leqslant 3$
+- ~P(x)
+- How to negate a universal? $\lnot (\forall x \in D, P(x)) \equiv \exists x \in D, \lnot P(x)$
+- negate "**Someone** in our class is taller than 7 feet"
+- $\exists x \in D, P(x) $
+- $\exists x$ = someone 
+- D = our class
+- P(x) = x is taller than 7 feet
+- negation: $\forall x \in D, \lnot P(x)$
+- "Everyone in our class is shorter than 7 feet"
+- So when you negate universal or existential quantifiers, what happens is that the $\forall$ turns to a $\exists$ or vice versa, and the predicate, P(x), is negated, $\lnot P(x)$, and vice versa
+
+Negating Logical Statements with Multiple Quantifiers
+- ex: "every integer has a larger integer"
+- $\forall x \in \mathbb{Z}, P(x)$
+- $\forall x \in \mathbb{Z}, \exists y \in \mathbb{Z}, y > x $
+- True: choose y = x + 1 $\in \mathbb{Z}$
+- Negate: $\exists x \in \mathbb{Z}, \lnot P(x)$
+- => $\exists x \in \mathbb{Z}, \forall y \in \mathbb{Z}, y \leqslant x$ 
+- Ex: "Some number in D is the largest"
+- The statement depends on what the domain is, if it's a limited set then whatever the max will be the largest number but if it's the set of all positive integers there is no largest as the positive integers are infinite
+- $\exists x \in D, P(x)$
+- some number = $\exists$
+- D = D
+- P(x) = is the largest
+- $\exists x \in D, \forall y \in D, x \geqslant y$
+- Negation: $\forall x \in D, \exists y \in D, x < y$
+
+Necessary and Sufficient Conditions
+- squares, rectangles, quadrilaterals
+- What is the relationship between squares and rectangles? All squares are rectangles but not all rectangles are squares
+- **If** x is a Square, **then** x is a Rectangle
+- **If** A(x), **then** B(x)
+- A(x) is a sufficient condition for B(x)
+- i.e. x being a square is sufficient to conclude x is a rectangle
+- How could you formally write that A(x) is a sufficient condition for B(x)? **If** A(x), **then** B(x)
+- **If** x is a Rectangle, **then** x is a Quadrilateral
+- **If** B(x), **then** C(x)
+- **If** x is not a Quadrilateral, **then** x is not a Rectangle
+- **If** ~C(x), **then** ~B(x)
+- C(x) is a necessary condition for B(x)
+- i.e. x being a quadrilateral is necessary to conclude x is a rectangle 
+- If we want a rectangle, it's **sufficient** to have a Square but it's necessary to have a **quadrilateral**
+- A(x) => B(x) => C(x)
+- A(x) is a sufficient condition for B(x), B(x) is a necessary condition for A(x)
+- Being a square is a sufficient condition for being a rectangle
+- Being a rectangle is a necessary condition for being a square
