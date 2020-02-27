@@ -261,3 +261,39 @@ Necessary and Sufficient Conditions
 - A(x) is a sufficient condition for B(x), B(x) is a necessary condition for A(x)
 - Being a square is a sufficient condition for being a rectangle
 - Being a rectangle is a necessary condition for being a square
+  
+Formal Definitions in Maths | Ex: Even & Odd Integers
+- informal definition of even integers: n is an even integer if n can be written as twice an integer
+- formal definition of even integers: n is an even integer if $\exists k \in \mathbb{Z}$ such that n = 2k
+- informal definition of odd integers: n is an odd integer if n is an integer that is not even
+- formal definition of odd integers: n is an odd integer if $\exists k \in \math{Z}$ such that n = 2k + 1
+
+How to Prove Maths Theorems
+- Theorem: an even integer plus an odd integer is another odd integer
+- Proof:
+  - Suppose m is even and n is odd
+  - $\exists k_{1} \in \mathbb{Z}$ and $\exists k_{1} \in \mathbb{Z}$ so that $m = 2 k_{1}$ and $n = 2k_{2} + 1 $
+  - Then, $m + n = (2k_{1})+ (2k_{2} + 1)$
+  - $= 2(k_{1} + k_{2}) + 1$
+  - Let $k_{3} = k_{1} + k_{2}$, and note it is an integer
+  - Hence, $\exists k_{3} \in \mathbb{Z}$ so that $m + n = 2k_{3} + 1$
+  - thus $m + n$ is odd
+- Begin with the assumptions, end with the conclusions
+- Assumption:
+  - Suppose m is even and n is odd
+- Conclusion:
+  - thus $m + n$ is odd
+- Definitions:
+  - $\exists k_{1} \in \mathbb{Z}$ and $\exists k_{1} \in \mathbb{Z}$ so that $m = 2 k_{1}$ and $n = 2k_{2} + 1 $
+  - Hence, $\exists k_{3} \in \mathbb{Z}$ so that $m + n = 2k_{3} + 1$
+- Manipulations:
+  - Then, $m + n = (2k_{1})+ (2k_{2} + 1)$
+  - $= 2(k_{1} + k_{2}) + 1$
+  - Let $k_{3} = k_{1} + k_{2}$, and note it is an integer
+- Direct Proofs of: $\forall x \in D, P(x) => Q(x)$
+  1. State the assumptions
+  2. Formally define the assumptions
+  3. Manipulate
+  4. Arrive at Definition of Conclusion
+  5. State the Conclusion
+- 

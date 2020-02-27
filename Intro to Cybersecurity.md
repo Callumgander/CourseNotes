@@ -1,4 +1,7 @@
-Networking
+# Intro to Cybersecurity
+
+## Networking
+
 - What are the three components of networking? medium, addressing and content
 - What do you use to uniquely identify a device on a network? an IP address
 - How many IP standards are in use? 2, IPv4 and IPv6

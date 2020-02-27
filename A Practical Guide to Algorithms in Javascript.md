@@ -127,4 +127,9 @@ Divide and conquer
 
 Greedy Algorithms
 - Greed algorithms always make the locally optimal choice
-- 
+- When is the best time to use a greedy algorithm? When your dataset is too big and finding the optimal choice would be too complex/time consuming/computationally too much, it's better to have some solution than no solution
+- You are the banker in Monopoly with your family who has lost many of the game pieces so you can only have bills in these denominations: $5 $10 $25
+- You need only pay out your family in the least number of bills possible so you don't run out before the game is over. Write a function that calculates the least number of bills required for any given  dollar amount that is divisible
+- Greedy Approach: always subtract the largest coin possible from the current amount
+- Generally try to avoid greedy approaches in interviews as there are a lot of cases in which you can be completely wrong
+- Brute Force Approach: calculate every single combination possible and keep track of the minimum 
