@@ -72,3 +72,11 @@ part 2
 - to select multiple instances of the same keyword press cmd + d and then repeated click d to select the next option as well and then you can type and delete or replace them
 
 up to 19:31
+
+- it gets pretty complicated, essentially it's about creating the createmeetup functionality and tying it to a specific group and sorting out the routes for such
+- addMeetup is a static function 
+- was getting an error on the group.meetups.push(meetup) line
+- use unshift instead of push as it's deprecated
+- https://stackoverflow.com/questions/48607918/mongoerror-unknown-modifier-pushall-in-node-js
+- up to third video 
+- 
