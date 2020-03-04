@@ -6,7 +6,7 @@ Installation and set up
 
 - initialize virtual python environment with ```virtualenv -p python3 venv```
 -  then activate it with ```source venv/bin/activate```
-- install selenium, the only dependency for this project
+- install selenium, the only dependency for this project, pip3 install selenium
 - selenium allows you to automate activities in the browser
 - download chromedriver and move it to usr/local/bin
 
@@ -28,4 +28,5 @@ Installation and set up
 - to prevent the selenium window from closing at the end of execution, execute with python3 -i main.py to interact interactively with it 
 - go to profile, grab followers button, click it, scroll down but not so fast as to trigger the see suggestions option, and scroll down until you are at the end of the list
 - grab all items in the list and store their name properties inside names
-- 
+- abstract this function away so you can you it for both followers and following
+- compare the two lists and if they're not in both, show them 
