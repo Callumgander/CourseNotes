@@ -1,6 +1,6 @@
 What are the five things that make a world class engineer according to the CEO of codesmith?
 
-- analytical problem sovling with code
+- analytical problem solving with code
 - technical communication (can i implement your approach just from your explanation)
 - engineering best practices and approach (debugging, code structure, patience and reference to documentation)
 - non-technical communication (empathetic and thoughtful communication)

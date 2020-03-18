@@ -150,3 +150,21 @@ const makeChange = (value, i) => {
 }
 
 makeChange(12);
+
+// dynamic approach
+const makeChange = (c) => {
+    // Return the value if it's in the cache
+    if (cache[ c]) return cache[c];
+
+    let mincoins = -1;
+
+    // Find the best coin
+    coins.forEach(coin => {
+        if (c - coin >= 0) {
+            let currMinCoins = makeChange(c - coin);
+            if (minCoins === -1 || currMinCoins < minCoins) {
+                minCoins = currMinCoins
+            }
+        }
+    })
+}

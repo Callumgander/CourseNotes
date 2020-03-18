@@ -133,3 +133,10 @@ Greedy Algorithms
 - Greedy Approach: always subtract the largest coin possible from the current amount
 - Generally try to avoid greedy approaches in interviews as there are a lot of cases in which you can be completely wrong
 - Brute Force Approach: calculate every single combination possible and keep track of the minimum 
+
+Dynamic Programming
+
+- Dynamic Approach: Cache values to avoid repeated calculations
+- What are some qualities of dynamic programming? Optimal substructure (tends to be recursive), overlapping subproblems
+- Honestly, the slides in this course just got worse and worse as the course went on, not much was properly explained here
+- 
