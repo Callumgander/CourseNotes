@@ -3,6 +3,8 @@
 
 Some of these are MOOCs, some tutorials, some are just portable wikis of problems and solutions for specific languages, e.g. bash
 
+It's also worth noting that this is far from complete, I wrote my notes for courses prior to 2019 by hand and am slowly transcribing them into markdown
+
 ## Tracker
 
 - A Practical Guide to Algorithms in Javascript (DONE)
