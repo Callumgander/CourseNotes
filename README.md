@@ -7,8 +7,8 @@ It's also worth noting that this is far from complete, I wrote my notes for cour
 
 ## Tracker
 Key
-- X means flashcards have been made from notes
-- - means flashcards still need to be made from notes
+- (X) means flashcards have been made from notes
+- (-) means flashcards still need to be made from notes
 
 Courses
 - A Practical Guide to Algorithms in Javascript (DONE) (X)
