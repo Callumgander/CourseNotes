@@ -1,197 +1,170 @@
-## What three modes does VIM have?
-- command mode
-- insert mode
-- last-line mode
+## What are the five things that make a world class engineer according to the CEO of codesmith?
 
-## What is SSH
-- secure shell
-- two different types of authentication: username/password and ssh key
+- analytical problem solving with code
+- technical communication (can i implement your approach just from your explanation)
+- engineering best practices and approach (debugging, code structure, patience and reference to documentation)
+- non-technical communication (empathetic and thoughtful communication)
+- language and computer science experience 
 
-## What's wrong with logging in with a password?
-- People are shit at passwords, people are always trying to steal your shit
-- Use public key authentication
+## What happens when javascript executes my code?
 
-## How does SSH work?
-- got a private key on your computer and a public key on the server
-- ssh-keygen -t rsa
-- my_key + my_key.pub
+- As soon as we start running our code, we create a global execution context which is
+- thread of execution (parsing and executing the code line after line)
+- live memory of variables with data (known as a Global Variable Environment)
 
-## What could a server be?
-- a web server
-- a database server
-- a storage server 
-- two types, dedicated server or a VPS (virtual private server)
+## What is the threat in JS?
 
-## How to log into your server
-- ssh -i ~/.ssh/my_key root@YOUR_SERVER_IP
+- Single threaded (one thing at a time)
+- Synchronous executionn (for now)
 
-## what is top?
-- equivalent of task manager on windows 
-- just type top into terminal
-- type q to quit
-- there's also htop
+## What happens when you execute a function?
 
-## How to install shit on linux
-- apt-get install APPNAME
+- you create a new execution context comprising of:
+- the thread of execution (we go through the code in the function line by line)
+- a local memory ('variable environment') where anything defined in the function is stored
 
-## How to set up your server
-- `apt-get update` to update your software
-- `adduser $USERNAME` (THE DOLLAR SIGN IS A PLACEHOLDER) to add user, don't want to run things as root unless you have to because it won't tell you if you're doing something stupid 
-- `usermod -aG sudo $USERNAME` add user to sudo group
-- `su USERNAME` to switch user to non root user
-- `cat ~/.ssh/my_key.pub | ssh $USERNAME@$SERVER_IP "mkdir -p ~/.ssh && cat >> ~/.ssh.authorized_keys`
-- `cat ~/.ssh/my_key.pub` print the contents of my_key.pub and pipe the output to the next command
-- `ssh $USERNAME@$SERVER_IP` ssh into your server 
-- `mkdir -p ~/.ssh` make a .ssh folder in your home directory if it doesn't already exist
-- `cat >> ~/.ssh/authorized_keys` write the contents of the output to the file authorized_keys
-- disable root login
+## What is the default waiting value?
 
-## How to test if you have sudo permission
-- cat /var/log/auth.log, only admin has permissions to view
+- undefined
 
-## How to disable root access?
-- sudo vi /etc/ssh/sshd_config
-- PermitRootLogin no
-- sudo service sshd restart 
+## What is a call stack?
 
-## How to buy a domain
-- can use something like namecheap.com
-- also turn on two-factor authentication on your domains
-- domain list -> manage -> advanced DNS
-- Whoisguard just protects your email address
-- Get the IP address of your VPS, add 2 A records with your IP address @ and www
+- a special data structure that allows JS to track where the threat of execution current is in our code
+- the last thing you put into a stack is the first thing you take out 
 
-## What are A records?
-- an A record maps a name to one or more IP addresses, when the IP are known and stable
+## What is the technical name for adding to a stack?
 
-## What is a CNAME record?
-- just maps a name to another name
+- pushing
 
-## How to host a site on github
-- branch: gh-pages
-- add a CNAME record with the domain you own, it will point towards the domain
-- reliable but not efficient
+## What is the tecnical name for removing from a stack?
 
-## What is nginx (engine x)?
-- a HTTP and reverse proxy server, a mail proxy vserver, and a generic TCP/UDP proxy server
+- popping
 
-## What's a proxy?
-- essentially takes a load of requests from different IP addresses and sends them out as one, masking the original IP address
+## If you don't put return in a function, what does the implicit return default return?
 
-## What's a reverse proxy?
-- reverse of a proxy, takes all the internet traffic and processes it into node
+- undefined
 
-## How to install and start nginx?
-- sudo apt-get install nginx x
-- sudo service nginx start
+## What is the technical name for local memory?
 
-## How to view your nginx configuration
-- sudo less /etc/nginx/sites-available/default
+- variable environment 
 
-## How to install git, node and npm
-- sudo apt-get install git
-- sudo apt-get install nodejs npm
+## Why use const instead of var?
 
-## What is a symbolic link
-- basically making it so that a keyword, say node, will resolve to another word, say nodejs, making it easier to use
+- if you're definitely not going to reassign a variable in memory, use const 
 
-## How to symlink nodejs to node
-- sudo ln -s /usr/bin/nodejs /usr/bin/node
+## What is functional programming?
 
-## Why do you make a www directory?
-- the files that get served out when people come to your site
+- it's a paradigm for thinking about how to write code for scale
+- Core features are:
+- Pure functions (no side effects), so when you call a function, you don't then change other parts of the program, they just return the return value
+- 'Higher order functions'
 
-## How to make a www directory
-- sudo mkdir -p /var/www
+## What are generalizable functions?
 
-## How to change the permissions for a directory
-- sudo chown -R $USER:$USER /var/www
+- essentially, if you're going to be using a function again and again but you're writing different functions for each one but only changing one or two parts, you could just add extra parameters to the first function to make it more generalizable and save you having to write multiple functions 
 
-## How to clone a repo
-- git clone httsp://github.com/young/Dev-Ops-for-Frontend.git
+## Why can functions be passed to other functions in JS?
 
-## how to rename something in terminal
-- mv Dev-Ops-for-Frontend/ app/ to rename the Dev Ops for Frontend directory to app
+- functions are first class objects in JS
+- they can be treated like any other JS object
+- they can be assigned to variables and properties of other objects, passed as arguments into functions and returned as values from functions 
 
-## How to start a server
-- node app.js
-- then type in the server's ip into your browser 
+## What is the only difference between objects and functions in JS?
 
-## How to set up nginx
-- sudo vi /etc/nginx/sites-available/default
-- `location / { proxy_pass https://127.0.0.1:3001/; }`
+- functions can be invoked 
 
-## How to get out the app
-- control + c will kill the server
+## What is the difference between callback and higher-order functions
 
-## How do most basic websites work?
-- domain name -> ip address -> nginx/apache -> node
+- the function we pass in is a callback function, the outer function that takes in the function (our callback) is a higher-order function
 
-## how to make a new branch in git?
-- git checkout -b some_branch_name
+## What is a higher order function?
 
-## How do we build and develop our app?
-- 
+- a function that takes in a function or passes out a function
 
-## What is Gulp?
-- it's a JavaScript task runner
-- similar to grunt, broccoli, brunch, jake
+## What is meant by Javascript static/lexical scoping?
 
-## What does a gulp task look like?
-- 
+- our lexical scope (the available live data when our function was defined) is what determines our available variables and prioritization at function execution, not where our function called
+- so basically, the variables in scope when the function was *defined* are the variables that function will refer to when called
 
-    `gulp.task('default', function() {
-        return gulp.src('sass/*.scss')
-            .pipe(watch('sass/*.scss'))
-            .pipe(sass())
-            .pipe(gulp.dest('dist'));
-    });`
+## What is the power of Closure? 
+- functions get 'memories' - functions can then have certain functionality, say if it's run once then it won't run again or will function different or it allows you to memoize results of previous times the function has been run. In a more advanced sense, you can implement the module pattern in JS
 
-## How to create gulp tasks?
-- open **gulpfile.js** in VI. it's in the root directory of the demo project
-- fill in the gulp task **clean-css** so that any css files in the **dist** folder are removed
-```
-    gulp.task('clean-css', function() {
-        del([`${DIST_FOLDER}*.css`, ]).then(paths => {
-            paths.length && console.log('Removed:\n', paths.join('\n'));
-        });
-    );
-```
-- add your new task to **build** task
+## What is the modular pattern in JS? 
+- Basically using closure so that your variables stay attached to the scope in which they were defined, their lexical scope, rather than the global scope in order to keep the global scope as clean as possible and prevent functions from having side effects that affect the global scope
 
-## How to install Gulp
-- sudo mkdir -p /usr/local/lib/node_modules
-- sudo npm i -g gulp
+## What is the backbone of modern web development in JavaScript? 
+- Asychronicity
 
-## What is Forever?
-- a process manager that keeps a process running indefinitely
-- Similar packages are Strong Loop Process Manager and PM2
+## How many threads does JS have? 
+- JS is single threaded, one command executes at a time and has a synchronous execution model, each line is executed in the order the code appears
 
-## How to run Forever
-- make sure you're in www/app
-- npm i -g forever
-- forever start app.js
-- sudo chown -R $USER /var/log/forever
+## What are the 3 additional components of JS beyond thread of execution, memory/variable environment and callstack? 
+- web browser APIs/Node background threads, callback/message/task queue, and event loop
 
-## How to create a log file for the Forever process
-- sudo mkdir -p /var/log/forever
+## What is an API? 
+- a bunch of functionality or data we can interact with
+  
+## What is the web browser in relation to JS? 
+- It's a javascript runtime with a bunch of other tools, like setTimeout
 
-## Where will your log files be?
-- in /var/log
+## What are the two rules for the execution of asynchronously delayed code? 
+- hold each deferred function in a queue (the Callback Queue) when the API 'completes'
+- Add the function to the Call stack (i.e. execute the function) ONLY when the call stack is totally empty (have the Event Loop check this condition)
 
-## How to start forever and log the output?
-- forever start app.js >> /var/log/forever/forever.log
-- cat the file to see it `cat /var/log/forever/forever.log`
+## What is the Event Loop? 
+- The process of checking whether the call stack is empty and whether the callstack queue has a function in it 
 
-## How to tail a log file?
-- sudo tail -f /var/log/auth.log
-- -f means follow, which means it won't just print the last 10 lines, it will follow what's happening
+## What are somethings where waiting would block our thread and we use Browser APIs for instead? 
+- a timer to finish running, new information from a server (Ajax), indication that a portion of the page has loaded, user interaction (clicks, mouseovers, drags), writing/reading to file system (Node), writing/reading database (Node)
 
-## How to make a npm script to run gulp and forever
--
-```
-    "scripts": {
-        "deploy": "gulp build && forever start app.js >> /var/log/forever/forever.log"
-    },
-```
-- then run `npm run deploy`
+## Why is OOP a popular paradigm for structuring complex code? 
+- easy to add features and functionality, performant (efficient in terms of memory), easy for us and other developers to reason about (a clear structure)
+
+## What is encapsulation? 
+- binding together the data and functions that manipulate the data 
+
+## What alternative techniques do we have for creating objects?
+- using dot notation, i.e. 
+``
+    let user2 = {};
+    user2.name = "Tim";
+``
+- using Object.create
+``
+    let user3 = Object.create(null);
+
+    user3.name = "Eva";
+    user3.score = 9;
+    user3.increment = function() {
+        user3.score++;
+    }
+``
+- Generate objects using function
+`` 
+  function userCreator(name, score) {
+      let newUser = {};
+      newUser.name = name;
+      newUser.score = score;
+      newUser.increment = function() {
+          newUser.score++;
+      }
+      return newUser
+  };
+
+  // later
+
+  let user1 = userCreator("Will", 3);
+  let user2 = userCreator("Tim", 5);
+  user1.increment();
+  user2.increment();
+``
+## what is the problem with code where each object gets copies of each function? E
+- Each time we create a new instance of an object, we make space in our computer's memory for all our data and functions. But our functions are just copies, meaning that rather than just attaching it to 1 separate function and recalling for each one, we are creating new functions for each user, wasting huge sums on memory at larger scales
+
+## what does the line let newUser = Object.create(userFunctionStore); do? 
+- create a newUser variable and assign to it and empty object with the prototype of it being userFunctionStore
+
+## What happens when we invoke userCreator("Will", 3) without the new keyword?
+- When we call the constructor function with new in front we automate 2 things
+  1. Create a new user object
+  2. return the new user object
