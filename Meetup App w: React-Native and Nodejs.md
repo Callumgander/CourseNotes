@@ -78,5 +78,8 @@ up to 19:31
 - was getting an error on the group.meetups.push(meetup) line
 - use unshift instead of push as it's deprecated
 - https://stackoverflow.com/questions/48607918/mongoerror-unknown-modifier-pushall-in-node-js
-- up to third video 
-- 
+- up to third video HOWEVER currently stopping to improving my backend knowledge and base knowledge of React Native before going further, as this guy doesn't really explain too much about why he's doing certain things and why certain things are needed
+  
+What does middleware do?
+- it basically allows the frontend to talk to the backend. So in the context of the meetup react-native app, bodyparser and morgan help process the http requests and responses in order to faciliate communication between the front- and back-end.
+- this description is rough, could do with improvement

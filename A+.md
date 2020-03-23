@@ -4,7 +4,7 @@
 
 #### Hard drive 
 - Most laptops use smaller 2.5 inche SSD drives
-- What is a SSD (s olid-state drive)?
+- What is a SSD (solid-state drive)?
   - All memory, no moving parts
   - Silent, fast access time, less latency
   - 2.5 inch and 1.8 inch form factors
