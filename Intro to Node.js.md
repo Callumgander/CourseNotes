@@ -75,6 +75,35 @@ How do you create modules?
         module.exports = {add, thing() {}, value: 1}
     ```
 
-UP TO IMPORTING NODE MODULES
- 
+How do you import modules in node?
+- require(/filename/modulename)
+- Takes a relative path to the module that you want to consume, and synchronously loads it by returning whatever the target module exported
+
+What is fs module in nodejs?
+- the fileSystem module for interacting with files on a machine
+
+How do you import fs in a file?
+- `const fs = require('fs')`
+
+How do you write to a file with fs in nodejs?
+- `fs.writeFileSync('./lib.js, 'var me = "me"')`
+
+What is the http module in nodejs?
+- low level-ish module for creating network based programs, like APIs
+
+What is the path module in nodejs?
+- useful for manipulating path strings and handling differences across many OS's
+
+What does a package.json file do?
+- it manages the dependencies in your project 
+
+What are the commander and inquirer modules for?
+- Commander: a module for building command line interfaces
+- Inquirer: a module for building command line prompts
+
+UP TO 4. ASYNC
+
+
+
+
 

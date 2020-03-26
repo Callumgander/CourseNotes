@@ -1,111 +1,49 @@
-## 固然 
-- it is true that，no doubt
-  
-## 负面 
-- negative aspects
+## 甲
+- "the first person" report， broadcast
 
-## 死记硬背 
-- rote memorizing
+## 乙
+- the second person
 
-## 缺乏 
-- que1fa4 - to lack，short of
+## 道德
+- morals，morality，ethics
 
-## 分析 
-- analyze，analysis
+## 下降
+- to descend，to drop
 
-## 体现 
-- embody，reflect
+## 与其说A，不如说B
+- A is not so much 。。。 as B
 
-## 竞争 
-- to compete
+## 依靠
+- to depend on
 
-## 走后门儿 
-- secure advantages through pull or influence
+## 保障
+- safety net， safeguard
 
-## 优点 
-- good point，merit，strength
+## 即使
+- even though，even if
 
-## 过分 
-- excessively， over-
+## 维持
+- to sustain，to keep，to maintain
 
-## 强调 
-- to emphasize，stress
+## 再说
+- more over
 
+## 婚姻 
+- marriage
 
-## 记忆 
-- memory
+## 婚外关系
+- extra-marital affair
 
-## 来往 
-- communications，relations
+## 增多
+- to grow in number or quantity，to pile up，to increase
 
+## 单亲家庭
+- single-parent family
 
-## 海峡 
-- strait
+## 勉强
+- reluctantly，grudgingly （形容词）
 
-
-## 海峡两岸 
-- mainland and taiwan
-  
-## 忽略 
-- to neglect
-  
-## 大同小异 
-- largely identical with minor differences
-
-## 过分 
-- excessive，undue
-
-## 过分强调 
-- overemphasize
-
-
-## 譬如 （pi4）
-- for example， for instance，etc。
-
-## 改革 
-- reform， reformation
-
-## 毫无 
-- not in the least
-
-
-## 产生 
-- to produce
-
-
-## 误会 
-- misunderstanding，misunderstand
-
-
-## 立刻 
-- immediately，right away
-
-
-## 隔离 
-- to keep apart，isolate，separate
-
-
-## 繁体字 fan2 
-- traditional characters
-
-
-## 注音符号 
-- zhuyin 
-
-
-## 保留 
-- retain，continue to have
-
-
-## 形式 
-- form
-
-
-## 接触 
--  to come into contact with
-
-
-## 交往 
-- contact， association， associate with
+## 就这么决定了，不必在讨论下去了
+- then it's decided。 There is no need for further discussion
 
 
