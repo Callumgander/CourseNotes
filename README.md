@@ -20,6 +20,7 @@ Courses
 - Instagram Bot (DONE)
   - Notes from Instagram Bot tutorial
 - Intro to Cybersecurity (In Progress)
+- Intro to Data Structures for Interviews (In Progress)
 - Intro to Nodejs (DONE) (-)
 - Intro to React v5 (In Progress)
 - JavaScript The Hard Parts (DONE) (X)
@@ -27,4 +28,4 @@ Courses
 - Mastering Chrome Developer Tools (DONE) (X)
 - Nand2Tetris (In Progress)
   - Transcribing handwritten notes into markdown, currently up to part 1
-- 
+- The Hard Parts of Servers & Nodejs (In Progress)
