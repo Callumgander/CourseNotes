@@ -44,6 +44,10 @@ Order of operations
 - to the btn class, set cursor to pointer so that it's a pointer when you hover over it, the display to inline-block, the border to 0, the font-weight to bold, the padding to 10px top and bottom and 20px left and right, the background to #262626, the font-size to 15px
 - to btn:hover, set the opacity to 0.9 to slightly lighten it as you go over it with the cursor
 - make a showcase comment to show where the css is for the showcase
-- to the showcase class, set the width to 100%, the height to 400px, the background url to the showcase img in the img folder with the properties of no-repeat center center/cover, the display to flex then reorientate the flex-direction to column, align the items to center
+- to the showcase class, set the width to 100%, the height to 400px, the background url to the showcase img in the img folder with the properties of no-repeat center center/cover, the display to flex then reorientate the flex-direction to column, align the items to center, set justify-content to flex-end, set the padding-bottom to 50px, seet the margin-bottom to 20px
+- to the showcase class's h2 and paragraphy, add a 10px to the margin's bottom
+- to the showcase class's btn class, add 20px to the top margin
 
-UP TO 18 minutes I think? 
+- Back to the html
+- add a homecards 1 comment
+- 

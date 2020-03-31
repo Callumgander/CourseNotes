@@ -209,6 +209,17 @@ What is a demultiplexor?
 - acts like the "inverse" of a multiplexor
 - distributes the single input value into one of two possible destinations
 
+What is an And16 gate?
+- a 16bit a and a 16bit b input and a 16bit output
+- only outputs 1 if both a and b are 1
+
+What is a Mux4Way16?
+- a 16bit, 4-way multiplexor, so 4 inputs, a, b, c, d, each with 16 bits, a selector with 2 bits, that determines the output and a 16 bit output
+- the selector and the value of each of the inputs essentially dictates which input is outputted, a, b, c, d
+
+
+
+
 
 
 

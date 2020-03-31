@@ -113,5 +113,14 @@ What are the pros and cons of JS arrays?
 - fast lookups and appends
 - however, slow inserts and deletes
 
+What does putting _ in front of a property on an object mean and why do it?
+- it means it's an internal property and that you shouldn't be working on it directly and you should only be accessing it through the methods that are public
+- e.g. with the _storage property  on the stack class, you should only interact with it through the push, pop and peak methods 
 
+What are the edge cases for the push method for a stack?
+- typechecking what the value being pushed is and checking whether an argument is present/more arguments are present 
 
+What are the edge cases for the pop method for a stack?
+- checking if the empty, can't pop an empty array
+
+UP TO QUEUES 

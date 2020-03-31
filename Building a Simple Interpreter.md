@@ -70,7 +70,7 @@ Components of an interpreter so far
   - method to return a string representation of the token as 'Token(TYPE, value)'
 - another method to call this string method and return it's result
 - an interpreter class that takes text as a parameter
-  - text is assigned to itself, position is set to 0, current_token is None, current_cha is text[pos]
+  - text is assigned to itself, position is set to 0, current_token is None, current_char is text[pos]
 - an error method to raise exceptions when there is an error parsing the input
 - an advance method to move the position forward as well as check if it's out of bounds or not, otherwise resetting current_chars position
 - a skip_whitespace method which while the current character is a whitespace, call the advance method
@@ -82,7 +82,7 @@ Components of an interpreter so far
   - if it's not None and fails to match any of these, call the error method
   - outside of the while loop, return the Token(EOF, None) to show that the next token is the end of the expression
 - an eat method that takes the token type as an argument, 
-  - check's is it's current_token type matches it's supposed type, if so assign the lexical analyser to the current_token, else return an error
+  - check's if it's current_token type matches it's supposed type, if so assign the lexical analyser to the current_token, else return an error
 - a term method that asssigns the current token to a token variable, calls eat and passes it INTEGER, then returns the value property on the token
 - a expression method, the parser/interpreter
   - assigns the get_next_token() method to the current_token property
@@ -91,5 +91,28 @@ Components of an interpreter so far
 - declare a main function that while true tries to take in input from the console and assign it to a text variable but breaks if an EOFError is encountered. Call the Interpreter on text and assign it to interpreter, call the expr method of interpreter and assign it to result and then print that result
 - Finally, just call the main function
 
+## Part 4
 
+What are some reasons to use grammars?
+- A grammar specifies the syntax of a programming language in a concise manner
+- A grammar can serve as great documentation
+- A grammar is a good starting point even if you manually write your parser from scratch. Quite often you can just convert the grammar to code by following a set of simple rules
+- There is a set of tools, called parser generators, which accept a grammar as an input and automatically generate a parser for you based on that grammar
 
+What is another name for a sequence of rules in grammar?
+- productions, e,g. expr:factor((Mul|Div)factor)* is a production
+
+What does a rule or production consist of?
+- a non-terminal called the head or left-hand side, a colon, and a sequence of terminals and/or non-terminals called the body or right-hand 
+
+In the grammar shown in Part 4 of Simple Interpreters, what are tokens like MUL, DIV, and INTEGER called?
+- Terminals
+
+In the grammar shown in Part 4 of Simple Interpreters, what are variables like expr and factor called?
+- non-terminals
+
+What is a factor, at least in the simple interpreter articles?
+- an integer
+
+What does (...)* mean in the context-free grammar used in Simple Interpreters? 
+- matches contents within the group zero or more times

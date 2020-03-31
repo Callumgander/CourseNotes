@@ -1,49 +1,26 @@
-## 甲
-- "the first person" report， broadcast
+## 我比你更大
+- I'm bigger than you
 
-## 乙
-- the second person
+## 我比你聪明多了
+- I'm so much smarter than you
 
-## 道德
-- morals，morality，ethics
+## 我比你小点 
+- I'm a bit smaller than you
 
-## 下降
-- to descend，to drop
+## 上海很冷，但北京更冷
+- shanghai is cold but beijing is colder
 
-## 与其说A，不如说B
-- A is not so much 。。。 as B
+## 今天已经很忙了，但是明天会更忙
+- Today is already busy but tomorrow will be even busier
+  
+## 吃这么多东西，你会更胖的 
+- if you eat so many things，you'll become even fatter
 
-## 依靠
-- to depend on
+## 小朋友都想要更多的玩具 
+- kids all want even more toys
 
-## 保障
-- safety net， safeguard
+## 不要太高兴，我们还有更多的工作 
+- don't be so happy，we still have a lot to do
 
-## 即使
-- even though，even if
-
-## 维持
-- to sustain，to keep，to maintain
-
-## 再说
-- more over
-
-## 婚姻 
-- marriage
-
-## 婚外关系
-- extra-marital affair
-
-## 增多
-- to grow in number or quantity，to pile up，to increase
-
-## 单亲家庭
-- single-parent family
-
-## 勉强
-- reluctantly，grudgingly （形容词）
-
-## 就这么决定了，不必在讨论下去了
-- then it's decided。 There is no need for further discussion
-
-
+## 我希望你能找到一个更好的男朋友 
+- I hope you're able to find an even better boyfriend
