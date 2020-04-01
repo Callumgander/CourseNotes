@@ -103,4 +103,6 @@ How to symlink nodejs to node
 
 How do you ping a server
 - ping sitename.com
-- 
+
+How to remove all files in a non-empty directory with no prompts
+- rm -r dirname
