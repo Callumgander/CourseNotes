@@ -47,29 +47,33 @@
 class Queue {
     constructor(){
         this._storage = {};
-        this._length = {};
+        this._length = 0;
+        this._headIndex = 0;
     }
 
     enqueue(value){
-        if (this._length != 0) {
-            Object.keys(this._storage).forEach((key, index) => {
-                key += 1;
-                console.log(key)
-            })
-        }
-        this._storage[0] = value;
+        // TODO: argument validation
+        const lastIndex = this._length + this._headIndex;
+        this._storage[lastIndex] = value;
         this._length++;
     }
 
     dequeue(){
-        const dequeVal = this._storage[this._length - 1];
-        delete this._storage[this._length - 1];
-        this._length--;
-        return dequeVal
+        if (this._length){
+            const firstVal = this._storage[this._headIndex];
+            delete this._storage[this._headIndex];
+            this._length--;
+            this._headIndex++;
+            return firstVal;
+        }
+        
     }
 
     peek(){
-        return this._storage[0]
+        if (this._storage === 0) {
+            return undefined
+        }
+        return this._storage[this._headIndex]
     }
 }
 
@@ -77,12 +81,9 @@ const myQueue = new Queue();
 
 myQueue.enqueue(5)
 console.log(myQueue.peek())
-console.log(myQueue._storage)
 myQueue.enqueue(2)
 console.log(myQueue.peek())
-console.log(myQueue._storage)
 myQueue.enqueue(4)
 console.log(myQueue.peek())
-console.log(myQueue._storage)
 myQueue.dequeue()
 console.log(myQueue.peek())
