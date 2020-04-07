@@ -21,7 +21,7 @@ Courses
   - Notes from Instagram Bot tutorial
 - Intro to Cybersecurity (In Progress)
 - Intro to Data Structures for Interviews (In Progress)
-- Intro to Nodejs (DONE) (-)
+- Intro to Nodejs (DONE) (X)
 - Intro to React v5 (In Progress)
 - JavaScript The Hard Parts (DONE) (X)
   - Done + FCs BUT there are chapters in version 2 I still haven't studied, e.g. promises 
