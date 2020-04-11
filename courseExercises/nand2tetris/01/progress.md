@@ -1,0 +1,11 @@
+Progress
+- Not (DONE)
+- And (DONE)
+- Or (DONE)
+- Xor (DONE)
+- Mux (DONE)
+- DMux (DONE)
+- Not16 (DONE)
+- And16 (DONE)
+- Or16 (DONE)
+- Or8Way (DONE)

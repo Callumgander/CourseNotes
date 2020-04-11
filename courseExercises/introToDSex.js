@@ -44,46 +44,91 @@
 
 // console.log(myStack)
 
-class Queue {
-    constructor(){
-        this._storage = {};
-        this._length = 0;
-        this._headIndex = 0;
+// class Queue {
+//     constructor(){
+//         this._storage = {};
+//         this._length = 0;
+//         this._headIndex = 0;
+//     }
+
+//     enqueue(value){
+//         // TODO: argument validation
+//         const lastIndex = this._length + this._headIndex;
+//         this._storage[lastIndex] = value;
+//         this._length++;
+//     }
+
+//     dequeue(){
+//         if (this._length){
+//             const firstVal = this._storage[this._headIndex];
+//             delete this._storage[this._headIndex];
+//             this._length--;
+//             this._headIndex++;
+//             return firstVal;
+//         }
+        
+//     }
+
+//     peek(){
+//         if (this._storage === 0) {
+//             return undefined
+//         }
+//         return this._storage[this._headIndex]
+//     }
+// }
+
+// const myQueue = new Queue();
+
+// myQueue.enqueue(5)
+// console.log(myQueue.peek())
+// myQueue.enqueue(2)
+// console.log(myQueue.peek())
+// myQueue.enqueue(4)
+// console.log(myQueue.peek())
+// myQueue.dequeue()
+// console.log(myQueue.peek())
+
+// Linked list
+
+class LinkedList {
+    constructor(value){
+        this.head = {value, next: null};
+        this.tail = this.head; 
     }
 
-    enqueue(value){
-        // TODO: argument validation
-        const lastIndex = this._length + this._headIndex;
-        this._storage[lastIndex] = value;
-        this._length++;
+    insert(value) {
+        // update tail
+        const node = {value, next: null};
+        this.tail.next = node;
+        this.tail = node;
     }
 
-    dequeue(){
-        if (this._length){
-            const firstVal = this._storage[this._headIndex];
-            delete this._storage[this._headIndex];
-            this._length--;
-            this._headIndex++;
-            return firstVal;
-        }
+    remove() {
         
     }
 
-    peek(){
-        if (this._storage === 0) {
-            return undefined
+    removeTail() {
+        // loop and find the node beore the tail
+        // node.next === this.tail
+        let currentNode = this.head;
+        while(currentNode != this.tail){
+            currentNode = currentNode.next;
         }
-        return this._storage[this._headIndex]
+        currentNode.next = null;
+        this.tail = currentNode;
+    }
+
+    contains() {
+
+    }
+
+    isHead() {
+
+    }
+
+    isTail() {
+
     }
 }
 
-const myQueue = new Queue();
-
-myQueue.enqueue(5)
-console.log(myQueue.peek())
-myQueue.enqueue(2)
-console.log(myQueue.peek())
-myQueue.enqueue(4)
-console.log(myQueue.peek())
-myQueue.dequeue()
-console.log(myQueue.peek())
+const myList = new LinkedList(1);

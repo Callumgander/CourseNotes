@@ -40,7 +40,7 @@ What is the result of 1 AND (0 OR (NOT (1)))? 0
 - You can describe a function as a formula or a truth table
 
 
-Boolean Identities
+What are Boolean Identities
 - Laws by which you can switch values but the result is still equivalent to the original
 
 What are the communatative laws?
@@ -161,8 +161,7 @@ What are the two most popular HDLs?
 
 ## Hardware Simulation
 
-What is the simulation process?
-
+What is the hardware simulation process?
 - load the HDL file into the hardware simulator
 - enter values (0's and 1's) into the chip's input pins (e.g. a and b)
 - evaluate the chip's logic
@@ -217,9 +216,60 @@ What is a Mux4Way16?
 - a 16bit, 4-way multiplexor, so 4 inputs, a, b, c, d, each with 16 bits, a selector with 2 bits, that determines the output and a 16 bit output
 - the selector and the value of each of the inputs essentially dictates which input is outputted, a, b, c, d
 
+## Week 2
 
+### Binary Numbers
 
+What is the relationship between bit and the number of possibly combinations?
+- N bits - $2^n$ possibilities
+- e.g. 3 bits - 8 possibilities
 
+What is the value of 101 in binary notation?
+- 5
 
+How do we convert binary representations into decimal representations
+- each 0 in a list of 0's from right to left represents a power of 2, so the first element, the 0th elements represents 2 to the power of 0, which is 1. This continues up to the nth element which represents 2 to the power of n
+- a concrete example of this is 00000111, which is equal to 7 because you have $2^0$(1) + $2^1$(2) + $2^2$(4) = 7
 
+What is the binary representation of 87?
+- 01010111
+
+What is the binary representation of 99?
+- 01100011
+
+### Binary Addition
+
+How do you do binary addition?
+- if one digit contains 1 and the other contains 0, then the result is 1, if both digits contain 0 then both are 0
+- if both contain 1 then result is 0 and carry the one to the next number until you reach 2 bits that are both zero and the result is then 1, each 1 and 0 addition that you go past turns results in 0, each 1 and 1 addition still returns 1 and carry the 1 to the next number 
+
+What happens when you have overflow?
+- so if you get 10010101 + 11011100 you geet 101110001, 9bits, so overflows by one digit
+- the overflow is usually disposed of by the computer
+
+What is a half adder?
+- adds two bits
+
+What is a full adder?
+- adds three bits
+
+What is an adder?
+- adds two numbers
+
+How does a half adder work?
+- essentially consists of two operations, suming a and b and then carrying the result if a and b both = 1
+
+How does a full adder work?
+- it essentially deals with a, b and a carry and how you sum then and then carry the result
+- if all 3 = 1, then sum = 1 and carry = 1. else if a or b = 1 and c = 1, then sum = 0 and carry = 1. else if a and b = 0 and c = 1 then sum = 1 and carry = 0
+
+How does a multi-bit adder work?
+- 15 full adders and one half adder for the right most bit
+
+How do you represent the negative number -x using positive numbers and what' this system called?
+- 2's complement representation
+- $2^n$- x
+- Basically use the last digit to represent whether something is positive or negative
+- can represent postive numbers in the range of $0 .. 2^n-1 - 1$
+- can represent negative numbers in the range of $-1 ... -2^n-1$
 

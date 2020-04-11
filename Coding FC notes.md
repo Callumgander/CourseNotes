@@ -106,3 +106,30 @@ How do you ping a server
 
 How to remove all files in a non-empty directory with no prompts
 - rm -r dirname
+
+How to install Nodejs?
+- curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
+- then use  nvm install node
+
+How do you set the default  node  version?
+- `nvm alias default (versionnum/or just node)`
+- e.g. `nvm alias default 10`
+
+How do you open the bash profile file?
+- `touch ~/.bash_profile`
+
+How do you create modules?
+- all your nodejs code are already modules, just export them 
+- e.g.
+    ```
+        // exported
+        const add = (num, num2) => {}
+        // not exported
+        const notPublic = () => {}
+
+        module.exports = {add, thing() {}, value: 1}
+    ```
+
+How do you write to a file with fs in nodejs?
+- `fs.writeFileSync('./lib.js, 'var me = "me"')`
+
