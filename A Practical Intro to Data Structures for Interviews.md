@@ -123,3 +123,4 @@ What are the edge cases for the push method for a stack?
 What are the edge cases for the pop method for a stack?
 - checking if the empty, can't pop an empty array
 
+UP TO HASHTABLE RETRIEVE

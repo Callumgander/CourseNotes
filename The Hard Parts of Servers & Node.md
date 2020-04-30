@@ -32,5 +32,24 @@ What does a HTTP message consist of?
 - Headers, e.g. metadata: what browser he's using, location, etc.
 - Body (optional)
 
+What does nodemon do?
+- automatically reloads your code everytime a change is saved
 
+How do you get the server to autorun a function when a client error is sent to the server?
+- server.on('clientError', doOnError)
+
+How do you read files in Node?
+- fs.readFile('./fileName', autoRunFunction )
+
+How do you convert a JSON file back to a JS object?
+- clean objName = JSON.parse(jsonName)
+
+What is the default batch size in Nodejs?
+- 64kb
+
+How do you set up a stream in node?
+- `const streamObject = fs.createReadStream('./filepath.json')`
+- Then use `streamObject.on('data', dOnNewBatch)`
+
+UP TO ASYNCHRONICITY 
 

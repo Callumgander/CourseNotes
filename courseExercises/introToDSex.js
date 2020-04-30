@@ -90,45 +90,93 @@
 
 // Linked list
 
-class LinkedList {
-    constructor(value){
-        this.head = {value, next: null};
-        this.tail = this.head; 
+// class LinkedList {
+//     constructor(value){
+//         this.head = {value, next: null};
+//         this.tail = this.head; 
+//     }
+
+//     insert(value) {
+//         // update tail
+//         const node = {value, next: null};
+//         this.tail.next = node;
+//         this.tail = node;
+//     }
+
+//     remove() {
+        
+//     }
+
+//     removeTail() {
+//         // loop and find the node beore the tail
+//         // node.next === this.tail
+//         let currentNode = this.head;
+//         while(currentNode != this.tail){
+//             currentNode = currentNode.next;
+//         }
+//         currentNode.next = null;
+//         this.tail = currentNode;
+//     }
+
+//     contains(value) {
+//         let currentNode = this.head;
+//         while (currentNode.value != value){
+//             currentNode = currentNode.next;
+//         }
+//         return currentNode.value === value
+//     }
+
+//     isHead(node) {
+//         return node === this.head;
+//     }
+
+//     isTail() {
+//         return node === this.tail;
+//     }
+// }
+
+// const myList = new LinkedList(1);
+
+class HashTable {
+    constructor(val) {
+        this._storage = [];
+        this._tableSize = val;
     }
 
-    insert(value) {
-        // update tail
-        const node = {value, next: null};
-        this.tail.next = node;
-        this.tail = node;
+    insert(key, value) {
+        const index = this._hash(key, this._tableSize);
+        this._storage[index] = value
+
+        if (!this._storage[index]) this._storage[index] = [];
+        this._storage[index].push([key, value])
     }
 
     remove() {
         
     }
 
-    removeTail() {
-        // loop and find the node beore the tail
-        // node.next === this.tail
-        let currentNode = this.head;
-        while(currentNode != this.tail){
-            currentNode = currentNode.next;
+    retrieve(key) {
+        const index = this.hash(key, this._tableSize);
+        const arrayAtIndex = this._storage[index];
+        
+        if (arrayAtIndex) {
+            for (let i = 0; i < this._storage[index].length; i++) {
+                const  keyValueArray = arrayAtIndex[i];
+                if (arrayAtIndex[0] === key) return keyValueArray[1];
+            }
         }
-        currentNode.next = null;
-        this.tail = currentNode;
     }
 
-    contains() {
-
-    }
-
-    isHead() {
-
-    }
-
-    isTail() {
-
+    _hash(str, n) {
+        let sum = 0;
+        for (let i = 0; i < str.length; i++) {
+            sum += str.charCodeAt(i) * 3
+        }
+        return sum % n;
     }
 }
 
-const myList = new LinkedList(1);
+myHashTable = new HashTable(25);
+
+myHashTable.insert('a', 1);
+
