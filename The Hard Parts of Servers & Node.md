@@ -51,5 +51,5 @@ How do you set up a stream in node?
 - `const streamObject = fs.createReadStream('./filepath.json')`
 - Then use `streamObject.on('data', dOnNewBatch)`
 
-UP TO ASYNCHRONICITY 
+
 
