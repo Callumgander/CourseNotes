@@ -21,5 +21,11 @@ What is communication state?
 What is the location state?
 - where are we in the application, are we looking at a product, are we in account sett ings, are we on the home page 
 
+When should you not use state to store something?
+- if you can calculate it using props or if you're not using it in the render method 
+- If you're not going to rerender it, don't store it in state
 
-UP TO SET STATE AND CALLBACK
+Should you use props to directly calculate state, as in fullName: props.firstName + ' ' + props.lastName?
+- No, derive the computed properties directly from props then use them, e.g. `const fullName = firstName + ' ' + lastName` then use it in the render method as `<h1>{fullName}</h1>`
+
+up to useeeffect and dependencies

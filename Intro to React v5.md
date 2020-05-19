@@ -75,7 +75,6 @@ What are extends in eslint?
 What are rules in eslint? 
 - the area where you can turn on and off specific rules 
 
-
 What do hooks do? 
 - they allow you to use functions statefully, so if you have a function on a input box, you might assign the initial value of that box to "hello" but then the hook will essentially update tha
 
@@ -104,3 +103,4 @@ How does useEffect() work?
 
 The first argument in useEffect() is the callback function, what is the second argument?
 - A list of dependencies, it is compulsory otherwise you'll get errors. Whenever any of these dependencies are updated, useEffect will call the callback function
+
