@@ -25,3 +25,12 @@ How do you connect to a mongodb database from a nodejs application?
 
 How do you link the schema and the model in mongodb
 - create a scheme then pass the scheme as the second argument into the mongoose.model() method
+
+What is a virtual in mongodb?
+- It's like a getter. so you can have a field that will get some other object to compute it but only when it's run
+
+How does an arrow function differ from a regular function?
+- it binds this
+
+At a high level, what does Express do?
+- creates routes that you can hit from an api and those routes are going to run database operations
