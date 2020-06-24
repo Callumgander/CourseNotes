@@ -56,4 +56,15 @@ What are resolvers?
 - resolvers are like controllers in a REST API, they are responsible for retrieving data
 - Every query and mutation your schema has, must have resolver that returns the specified type
 - Types and fields on types often have resolvers as well
-- 
+- Incoming query dictates what resolvers run and in what order
+
+How do you create resolves
+- return the same shape as described in the schema, or delegate to another resolver
+- Resolvers take a few args:
+  - starting object (what the parent resolver returned or starting value from server)
+  - args (any arguments from the incoming request)
+  - context (shared context obj across all resolvers, like the req object in express)
+  - info (advanced AST of the incoming request)
+- any errors are caught and immediately send back to the client
+
+up to field type resolvers
