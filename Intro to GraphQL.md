@@ -67,4 +67,20 @@ How do you create resolves
   - info (advanced AST of the incoming request)
 - any errors are caught and immediately send back to the client
 
-up to field type resolvers
+What are interfaces in GraphQL?
+- They are inheritable types for your schema
+- Some types are very similar with the exception of a few fields. You can use an interface as a base type and have other types implement that interface. Just like a language type system
+- You then have to use fragments in your request query to conditionally ask for type specific fields
+
+What are unions in GraphQL?
+- A combination type that can be one of many diffeerent types that may not relate to each other
+- Some times you want a query to return a possibility of more than just one type. Unions allow you to create a type that is composed of many types where any oof them may be fulfilled
+- Great for search queries 
+
+How to auth in GraphQL?
+- There are many ways 
+- Lock down the entire API by checking auth outside of GraphQL or when creating the context object
+- Handle the auth in the resolvers (just make sure you enhance the context object with all that you need)
+- Use custom directives in your SDL, allowing you to lockdown specific fields, e.g. only admin can look at the createdby field, etc.
+- Use resolver middleware (in some frameworks)
+
