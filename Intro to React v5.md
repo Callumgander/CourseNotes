@@ -104,3 +104,9 @@ How does useEffect() work?
 The first argument in useEffect() is the callback function, what is the second argument?
 - A list of dependencies, it is compulsory otherwise you'll get errors. Whenever any of these dependencies are updated, useEffect will call the callback function
 
+What can you not do with hooks?
+- Error boundaries 
+
+What does context do?
+- provide application level state that all components can access
+- mostly replaces Redux
