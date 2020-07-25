@@ -108,5 +108,6 @@ What can you not do with hooks?
 - Error boundaries 
 
 What does context do?
-- provide application level state that all components can access
+- provide *applicaion* level state that all components can access
 - mostly replaces Redux
+

@@ -71,4 +71,68 @@ What is Latency?
 
 What is Throughput?
 - The number of operations that a system can handle properly per time unit. For instance, the throughput of a server can often be measured in requests per second (RPS or QPS)
-- 
+
+## Avaliability
+
+What is a process?
+- a program that is currently running on a machine. You should always assume that any process may get terminated at any time in a sufficiently large system
+
+What is a node/instance/host?
+- these three terms refer to the same thing most of the time: a virtual or physical machine on which the developer runs processes. Sometimes the word server also refers to this same concept
+
+What is Availability?
+- The odds of a particular server or service being up and running at any point in time, usually measured in percentages
+
+What are Nines?
+- Typically reefers to percentages of uptime. For example, 5 nines of availability means an uptime of 99.999% of the time
+
+What is High Availability?
+- Used to describe systems that have particularly high levels of availability, typically 5 nines of more
+
+What is Redundancy?
+- The process of replicating parts of a system in an effort to make it more reliable
+
+What is a SLA?
+- Short for "service-level agreement", an SLA is a collection of guarantees given to a customer by a service provider. SLAs typically make guarantees on a system's availability, amongst other things. SLAs are made up of one or multiple SLOs
+
+What is SLO?
+- Short for "service-level objective", an SLO is a guaranteee given to a customer by a service provider. SLOs typically make guarantees on a system's availability, amongst other things. SLOs constitute an SLA
+
+## Caching
+
+What is a cache?
+- A piece of hardware or software that stores data, typically meant to retrieve that data faster than otherwise
+- Caches are often used to store responses to network requests as well as results of computationally-long operations
+- Note that data in a cache can become stale if the main source of truth for that data (i.e., the main database behind the cache) gets updated and the cache doesn't
+
+What is a cache hit?
+- when requested data is found in a cache
+
+What is a cache miss?
+- When requested data could have been found in a cache but isn't. This is typically used to refer to a negative consequence of a system failure or of a poor design choice
+
+What is a Cache Eviction Policy?
+- The policy by which values get evicted or removed from a cache. Popular cache eviction policies include LRU (least-recently used), FIFO (first in first out), and LFU (least-frequently used)
+
+What is a Content Delivery Network?
+- A CDN is a third-party service that acts like a cache for your servers. Sometimes, web applications can be slow for users in particular region if your servers are located only in another region. A CDN has servers all around the world, meaning that the latency to a CDN's servers will almost always be far better than the latency to your servers. A CDN's servers are often referred to as PoPs (Points of Presence). Two of the most popular CDNs are Cloudflare and Google Cloud CDN
+
+## Proxies
+
+What is a Forward Proxy?
+- A server that sits between a client and servers and acts on behalf of the client, typically used to mask the client's identity (IP address). Note that forward proxies are often referred to as just proxies
+
+What is a Reverse Proxy?
+- A server that sits between clients and servers and acts on behalf of thee servers, typically used for logging, load balancing, or caching
+
+## Load Balancers
+
+What is a Load Balancer?
+- a type of reverse that distributes traffic across servers. Load balancers can be found in many parts of a system, from the DNS layer all the way to the database layer
+
+What is the Server-Selection Strategy?
+- How a load balancer chooses servers when distributing traffic amongst multiple servers. Commnly used strategies include round-robin, random selection, performance-based selection (choosing the server with the best performance metrics, like the fastest response time or the least amount of traffic), and IP-based routing
+
+What is a Hot Spot?
+- When distributing a workload across a set of servers, that workload might be spread unevenly. This can happen if your sharding key or your hashing function are suboptimal, or if your workload is naturally skewed: some servers will receive a lot more traffic than others, thus creating a "hot spot"
+
