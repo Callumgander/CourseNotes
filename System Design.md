@@ -136,3 +136,34 @@ What is the Server-Selection Strategy?
 What is a Hot Spot?
 - When distributing a workload across a set of servers, that workload might be spread unevenly. This can happen if your sharding key or your hashing function are suboptimal, or if your workload is naturally skewed: some servers will receive a lot more traffic than others, thus creating a "hot spot"
 
+## Relational Databases
+
+What are Relational Databases?
+- A type of structured database in which data is stored following a tabular format; often supports powerful querying using SQL
+
+What are Non-Relational Databases?
+- In contrast with relational databases (SQL databases), a type of database that is free of imposed, tabular-like structur. Non-relational databases are often referred to as NoSQL databases
+
+What is SQL?
+- Structured Query Language. Relational databases can be used using a derivative of SQL such as PostgreSQL in the case of Postgres
+
+What are SQL Databases?
+- Any database that supports SQL. This term is often used synonmyously with "Relational Database", though in practice, not every relational database supports SQL
+
+What are NoSQL Databases?
+- Any database that is not SQL compatible is called NoSQL
+
+What is an ACID transaction?
+- Atomicity: the operations that constitute the transaction will either all succeed or all fail. There is no in-between state
+- Consistency: the transaction cannot bring the database to an invalid state. After the transaction is committed or rolled back, the rules for each record will still apply, and all future transactions will see the effect of the transaction
+- Isolation: the execution of multiple transactions concurrently will have the same effect as if they had been executed sequentially
+- Durability: any committed transaction is written to non-volatile storage. It will not be undone by a crash, power loss, or network partition
+
+What is a Database Index?
+- A special auxiliary data structure that allows your database to perform certain queries much faster. Indexes can typically only exist to reference structured data, like data stored in relational databases. In practice, you create an index on one or multiple columns in your database to greatly speed up read queries that you run very often, with the downside of slightly longer writes to your database, since writes have too also take place in the relevant index
+
+What is Strong Consistency?
+- Strong Consistency usually refers to the consistency of ACID transactions, as opposed to Eventual Consistency
+
+What is Eventual Consistency?
+- A consistency model which is unlike Strong Consistency. In this model, reads might return a view of the system that is stale. An eventually consistency datastore will give guarantees that the state of the database will eventually reflect writes within a time period (could be 10 seconds, or minutes)
